@@ -1,0 +1,873 @@
+{
+ "color primitives": {
+  "primary key color": {
+   "type": "color",
+   "value": "#94B0D1"
+  },
+  "secondary key color": {
+   "type": "color",
+   "value": "#6F91B8"
+  },
+  "tertiary key color": {
+   "type": "color",
+   "value": "#496783"
+  },
+  "neutral key color": {
+   "type": "color",
+   "value": "#6F7D8C"
+  },
+  "neutralVariant key color": {
+   "type": "color",
+   "value": "#A5B4C5"
+  },
+  "error key color": {
+   "type": "color",
+   "value": "#BA1A1A"
+  },
+  "warning key color": {
+   "type": "color",
+   "value": "#8A5100"
+  },
+  "primary 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "primary 4": {
+   "type": "color",
+   "value": "#000E25"
+  },
+  "primary 10": {
+   "type": "color",
+   "value": "#002868"
+  },
+  "primary 20": {
+   "type": "color",
+   "value": "#004180"
+  },
+  "primary 30": {
+   "type": "color",
+   "value": "#005B9A"
+  },
+  "primary 40": {
+   "type": "color",
+   "value": "#006BE6"
+  },
+  "primary 50": {
+   "type": "color",
+   "value": "#2C7BBD"
+  },
+  "primary 60": {
+   "type": "color",
+   "value": "#4C95D9"
+  },
+  "primary 70": {
+   "type": "color",
+   "value": "#94B0D1"
+  },
+  "primary 80": {
+   "type": "color",
+   "value": "#86CCFF"
+  },
+  "primary 90": {
+   "type": "color",
+   "value": "#A3E8FF"
+  },
+  "primary 95": {
+   "type": "color",
+   "value": "#B1F6FF"
+  },
+  "primary 99": {
+   "type": "color",
+   "value": "#BDFFFF"
+  },
+  "primary 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "secondary 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "secondary 4": {
+   "type": "color",
+   "value": "#000E26"
+  },
+  "secondary 10": {
+   "type": "color",
+   "value": "#002869"
+  },
+  "secondary 20": {
+   "type": "color",
+   "value": "#004181"
+  },
+  "secondary 30": {
+   "type": "color",
+   "value": "#005A9B"
+  },
+  "secondary 40": {
+   "type": "color",
+   "value": "#0062A3"
+  },
+  "secondary 50": {
+   "type": "color",
+   "value": "#2F7BBD"
+  },
+  "secondary 60": {
+   "type": "color",
+   "value": "#4E95D9"
+  },
+  "secondary 70": {
+   "type": "color",
+   "value": "#6BB0F6"
+  },
+  "secondary 80": {
+   "type": "color",
+   "value": "#88CBFF"
+  },
+  "secondary 90": {
+   "type": "color",
+   "value": "#A4E8FF"
+  },
+  "secondary 95": {
+   "type": "color",
+   "value": "#B3F6FF"
+  },
+  "secondary 99": {
+   "type": "color",
+   "value": "#BEFFFF"
+  },
+  "secondary 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "tertiary 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "tertiary 4": {
+   "type": "color",
+   "value": "#000F25"
+  },
+  "tertiary 10": {
+   "type": "color",
+   "value": "#002A66"
+  },
+  "tertiary 20": {
+   "type": "color",
+   "value": "#00437E"
+  },
+  "tertiary 30": {
+   "type": "color",
+   "value": "#005C99"
+  },
+  "tertiary 40": {
+   "type": "color",
+   "value": "#0066A3"
+  },
+  "tertiary 50": {
+   "type": "color",
+   "value": "#207DBB"
+  },
+  "tertiary 60": {
+   "type": "color",
+   "value": "#4497D6"
+  },
+  "tertiary 70": {
+   "type": "color",
+   "value": "#63B1F3"
+  },
+  "tertiary 80": {
+   "type": "color",
+   "value": "#80CDFF"
+  },
+  "tertiary 90": {
+   "type": "color",
+   "value": "#9DE9FF"
+  },
+  "tertiary 95": {
+   "type": "color",
+   "value": "#ACF8FF"
+  },
+  "tertiary 99": {
+   "type": "color",
+   "value": "#B7FFFF"
+  },
+  "tertiary 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "neutral 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "neutral 4": {
+   "type": "color",
+   "value": "#090A0B"
+  },
+  "neutral 10": {
+   "type": "color",
+   "value": "#1A1C1E"
+  },
+  "neutral 20": {
+   "type": "color",
+   "value": "#2F3033"
+  },
+  "neutral 30": {
+   "type": "color",
+   "value": "#45474A"
+  },
+  "neutral 40": {
+   "type": "color",
+   "value": "#5D5E61"
+  },
+  "neutral 50": {
+   "type": "color",
+   "value": "#76777A"
+  },
+  "neutral 60": {
+   "type": "color",
+   "value": "#909194"
+  },
+  "neutral 70": {
+   "type": "color",
+   "value": "#AAABAE"
+  },
+  "neutral 80": {
+   "type": "color",
+   "value": "#C6C6C9"
+  },
+  "neutral 90": {
+   "type": "color",
+   "value": "#E2E2E5"
+  },
+  "neutral 95": {
+   "type": "color",
+   "value": "#F0F0F4"
+  },
+  "neutral 99": {
+   "type": "color",
+   "value": "#FCFCFF"
+  },
+  "neutral 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "neutralVariant 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "neutralVariant 4": {
+   "type": "color",
+   "value": "#080A0C"
+  },
+  "neutralVariant 10": {
+   "type": "color",
+   "value": "#171C22"
+  },
+  "neutralVariant 20": {
+   "type": "color",
+   "value": "#2B3137"
+  },
+  "neutralVariant 30": {
+   "type": "color",
+   "value": "#42474E"
+  },
+  "neutralVariant 40": {
+   "type": "color",
+   "value": "#595F66"
+  },
+  "neutralVariant 50": {
+   "type": "color",
+   "value": "#72777F"
+  },
+  "neutralVariant 60": {
+   "type": "color",
+   "value": "#8C9198"
+  },
+  "neutralVariant 70": {
+   "type": "color",
+   "value": "#A6ACB3"
+  },
+  "neutralVariant 80": {
+   "type": "color",
+   "value": "#C2C7CF"
+  },
+  "neutralVariant 90": {
+   "type": "color",
+   "value": "#DEE3EB"
+  },
+  "neutralVariant 95": {
+   "type": "color",
+   "value": "#ECF1F9"
+  },
+  "neutralVariant 99": {
+   "type": "color",
+   "value": "#F8FCFF"
+  },
+  "neutralVariant 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "neutralExtended 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "neutralExtended 4": {
+   "type": "color",
+   "value": "#090A0B"
+  },
+  "neutralExtended 10": {
+   "type": "color",
+   "value": "#17191C"
+  },
+  "neutralExtended 20": {
+   "type": "color",
+   "value": "#2F3337"
+  },
+  "neutralExtended 30": {
+   "type": "color",
+   "value": "#464C53"
+  },
+  "neutralExtended 40": {
+   "type": "color",
+   "value": "#5E656E"
+  },
+  "neutralExtended 50": {
+   "type": "color",
+   "value": "#757F8A"
+  },
+  "neutralExtended 60": {
+   "type": "color",
+   "value": "#9198A1"
+  },
+  "neutralExtended 70": {
+   "type": "color",
+   "value": "#ACB2B9"
+  },
+  "neutralExtended 80": {
+   "type": "color",
+   "value": "#C8CCD0"
+  },
+  "neutralExtended 90": {
+   "type": "color",
+   "value": "#E3E5E8"
+  },
+  "neutralExtended 95": {
+   "type": "color",
+   "value": "#F1F2F3"
+  },
+  "neutralExtended 99": {
+   "type": "color",
+   "value": "#FCFCFD"
+  },
+  "neutralExtended 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "neutralVariantExtended 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "neutralVariantExtended 4": {
+   "type": "color",
+   "value": "#090A0C"
+  },
+  "neutralVariantExtended 10": {
+   "type": "color",
+   "value": "#16191D"
+  },
+  "neutralVariantExtended 20": {
+   "type": "color",
+   "value": "#2B323B"
+  },
+  "neutralVariantExtended 30": {
+   "type": "color",
+   "value": "#414C58"
+  },
+  "neutralVariantExtended 40": {
+   "type": "color",
+   "value": "#576575"
+  },
+  "neutralVariantExtended 50": {
+   "type": "color",
+   "value": "#6C7E93"
+  },
+  "neutralVariantExtended 60": {
+   "type": "color",
+   "value": "#8A98A8"
+  },
+  "neutralVariantExtended 70": {
+   "type": "color",
+   "value": "#A7B2BE"
+  },
+  "neutralVariantExtended 80": {
+   "type": "color",
+   "value": "#C4CBD4"
+  },
+  "neutralVariantExtended 90": {
+   "type": "color",
+   "value": "#E2E5E9"
+  },
+  "neutralVariantExtended 95": {
+   "type": "color",
+   "value": "#F0F2F4"
+  },
+  "neutralVariantExtended 99": {
+   "type": "color",
+   "value": "#FCFCFD"
+  },
+  "neutralVariantExtended 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "error 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "error 4": {
+   "type": "color",
+   "value": "#170001"
+  },
+  "error 10": {
+   "type": "color",
+   "value": "#410002"
+  },
+  "error 20": {
+   "type": "color",
+   "value": "#690005"
+  },
+  "error 30": {
+   "type": "color",
+   "value": "#93000A"
+  },
+  "error 40": {
+   "type": "color",
+   "value": "#BA1A1A"
+  },
+  "error 50": {
+   "type": "color",
+   "value": "#DE3730"
+  },
+  "error 60": {
+   "type": "color",
+   "value": "#FF5449"
+  },
+  "error 70": {
+   "type": "color",
+   "value": "#FF897D"
+  },
+  "error 80": {
+   "type": "color",
+   "value": "#FFB4AB"
+  },
+  "error 90": {
+   "type": "color",
+   "value": "#FFDAD6"
+  },
+  "error 93": {
+   "type": "color",
+   "value": "#FFE5E2"
+  },
+  "error 96": {
+   "type": "color",
+   "value": "#FFF1EF"
+  },
+  "error 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "warning 0": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "warning 4": {
+   "type": "color",
+   "value": "#110800"
+  },
+  "warning 10": {
+   "type": "color",
+   "value": "#2E1500"
+  },
+  "warning 20": {
+   "type": "color",
+   "value": "#4E2600"
+  },
+  "warning 30": {
+   "type": "color",
+   "value": "#703900"
+  },
+  "warning 40": {
+   "type": "color",
+   "value": "#8A5100"
+  },
+  "warning 50": {
+   "type": "color",
+   "value": "#A96700"
+  },
+  "warning 60": {
+   "type": "color",
+   "value": "#C98200"
+  },
+  "warning 70": {
+   "type": "color",
+   "value": "#E69A00"
+  },
+  "warning 80": {
+   "type": "color",
+   "value": "#FFB74D"
+  },
+  "warning 90": {
+   "type": "color",
+   "value": "#FFDC9E"
+  },
+  "warning 93": {
+   "type": "color",
+   "value": "#FFE5BC"
+  },
+  "warning 96": {
+   "type": "color",
+   "value": "#FFEFDC"
+  },
+  "warning 100": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "neutral 92": {
+   "type": "color",
+   "value": "#E8E8EB"
+  },
+  "neutral 94": {
+   "type": "color",
+   "value": "#EDEDF1"
+  },
+  "neutral 96": {
+   "type": "color",
+   "value": "#F3F3F7"
+  },
+  "neutral 98": {
+   "type": "color",
+   "value": "#F9F9FC"
+  },
+  "neutral 87": {
+   "type": "color",
+   "value": "#DADADD"
+  },
+  "neutral 6": {
+   "type": "color",
+   "value": "#0F1011"
+  },
+  "neutral 12": {
+   "type": "color",
+   "value": "#1E2022"
+  },
+  "neutral 17": {
+   "type": "color",
+   "value": "#292A2D"
+  },
+  "neutral 22": {
+   "type": "color",
+   "value": "#333538"
+  },
+  "on primary seed": {
+   "type": "color",
+   "value": "#001833"
+  }
+ },
+ "color roles": {
+  "primary": {
+   "type": "color",
+   "value": "#94B0D1"
+  },
+  "on primary": {
+   "type": "color",
+   "value": "#001833"
+  },
+  "primary container": {
+   "type": "color",
+   "value": "#A3E8FF"
+  },
+  "on primary container": {
+   "type": "color",
+   "value": "#002868"
+  },
+  "secondary": {
+   "type": "color",
+   "value": "#0062A3"
+  },
+  "on secondary": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "secondary container": {
+   "type": "color",
+   "value": "#A4E8FF"
+  },
+  "on secondary container": {
+   "type": "color",
+   "value": "#002869"
+  },
+  "tertiary": {
+   "type": "color",
+   "value": "#0066A3"
+  },
+  "on tertiary": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "tertiary container": {
+   "type": "color",
+   "value": "#9DE9FF"
+  },
+  "on tertiary container": {
+   "type": "color",
+   "value": "#002A66"
+  },
+  "error": {
+   "type": "color",
+   "value": "#BA1A1A"
+  },
+  "on error": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "error container": {
+   "type": "color",
+   "value": "#FFDAD6"
+  },
+  "on error container": {
+   "type": "color",
+   "value": "#410002"
+  },
+  "surface": {
+   "type": "color",
+   "value": "#F9F9FC"
+  },
+  "on surface": {
+   "type": "color",
+   "value": "#1A1C1E"
+  },
+  "surface variant": {
+   "type": "color",
+   "value": "#DEE3EB"
+  },
+  "on surface variant": {
+   "type": "color",
+   "value": "#42474E"
+  },
+  "surface container lowest": {
+   "type": "color",
+   "value": "#FFFFFF"
+  },
+  "surface container low": {
+   "type": "color",
+   "value": "#F3F3F7"
+  },
+  "surface container": {
+   "type": "color",
+   "value": "#EDEDF1"
+  },
+  "surface container high": {
+   "type": "color",
+   "value": "#E8E8EB"
+  },
+  "surface container highest": {
+   "type": "color",
+   "value": "#E2E2E5"
+  },
+  "outline": {
+   "type": "color",
+   "value": "#72777F"
+  },
+  "outline variant": {
+   "type": "color",
+   "value": "#C2C7CF"
+  },
+  "primary fixed": {
+   "type": "color",
+   "value": "#A3E8FF"
+  },
+  "primary fixed dim": {
+   "type": "color",
+   "value": "#86CCFF"
+  },
+  "on primary fixed": {
+   "type": "color",
+   "value": "#002868"
+  },
+  "on primary fixed variant": {
+   "type": "color",
+   "value": "#005B9A"
+  },
+  "secondary fixed": {
+   "type": "color",
+   "value": "#A4E8FF"
+  },
+  "secondary fixed dim": {
+   "type": "color",
+   "value": "#88CBFF"
+  },
+  "on secondary fixed": {
+   "type": "color",
+   "value": "#002869"
+  },
+  "on secondary fixed variant": {
+   "type": "color",
+   "value": "#005A9B"
+  },
+  "tertiary fixed": {
+   "type": "color",
+   "value": "#9DE9FF"
+  },
+  "tertiary fixed dim": {
+   "type": "color",
+   "value": "#80CDFF"
+  },
+  "on tertiary fixed": {
+   "type": "color",
+   "value": "#002A66"
+  },
+  "on tertiary fixed variant": {
+   "type": "color",
+   "value": "#005C99"
+  },
+  "inverse surface": {
+   "type": "color",
+   "value": "#2F3033"
+  },
+  "inverse on surface": {
+   "type": "color",
+   "value": "#F0F0F4"
+  },
+  "inverse primary": {
+   "type": "color",
+   "value": "#86CCFF"
+  },
+  "scrim": {
+   "type": "color",
+   "value": "#000000"
+  },
+  "surface tint": {
+   "type": "color",
+   "value": "#94B0D1"
+  },
+  "surface dim": {
+   "type": "color",
+   "value": "#DADADD"
+  },
+  "surface bright": {
+   "type": "color",
+   "value": "#F9F9FC"
+  }
+ },
+ "color roles dark": {
+  "note": "Primary group is deliberately seed-led (kept identical to light mode, per standing decision) instead of Google's standard P80/P20/P30/P90 mapping. Every other group below follows Google's official M3 dark-scheme tone mapping exactly (m3.material.io / Compose / Flutter docs): X80/X20/X30/X90 for secondary, tertiary and error; surface=N6, onSurface=N90, surfaceVariant=NV30, onSurfaceVariant=NV80; outline=NV60, outlineVariant=NV30; surface containers=N4/N10/N12/N17/N22. Neutral 6, 12, 17 and 22 are new interpolated primitives (same linear-RGB method already used for tone 87 and Neutral 92-98).",
+  "primary": {
+   "type": "color",
+   "value": "#94B0D1"
+  },
+  "on primary": {
+   "type": "color",
+   "value": "#001833"
+  },
+  "primary container": {
+   "type": "color",
+   "value": "#005B9A"
+  },
+  "on primary container": {
+   "type": "color",
+   "value": "#A3E8FF"
+  },
+  "secondary": {
+   "type": "color",
+   "value": "#88CBFF"
+  },
+  "on secondary": {
+   "type": "color",
+   "value": "#004181"
+  },
+  "secondary container": {
+   "type": "color",
+   "value": "#005A9B"
+  },
+  "on secondary container": {
+   "type": "color",
+   "value": "#A4E8FF"
+  },
+  "tertiary": {
+   "type": "color",
+   "value": "#80CDFF"
+  },
+  "on tertiary": {
+   "type": "color",
+   "value": "#00437E"
+  },
+  "tertiary container": {
+   "type": "color",
+   "value": "#005C99"
+  },
+  "on tertiary container": {
+   "type": "color",
+   "value": "#9DE9FF"
+  },
+  "error": {
+   "type": "color",
+   "value": "#FFB4AB"
+  },
+  "on error": {
+   "type": "color",
+   "value": "#690005"
+  },
+  "error container": {
+   "type": "color",
+   "value": "#93000A"
+  },
+  "on error container": {
+   "type": "color",
+   "value": "#FFDAD6"
+  },
+  "surface": {
+   "type": "color",
+   "value": "#0F1011"
+  },
+  "on surface": {
+   "type": "color",
+   "value": "#E2E2E5"
+  },
+  "surface variant": {
+   "type": "color",
+   "value": "#42474E"
+  },
+  "on surface variant": {
+   "type": "color",
+   "value": "#C2C7CF"
+  },
+  "surface container lowest": {
+   "type": "color",
+   "value": "#090A0B"
+  },
+  "surface container low": {
+   "type": "color",
+   "value": "#1A1C1E"
+  },
+  "surface container": {
+   "type": "color",
+   "value": "#1E2022"
+  },
+  "surface container high": {
+   "type": "color",
+   "value": "#292A2D"
+  },
+  "surface container highest": {
+   "type": "color",
+   "value": "#333538"
+  },
+  "outline": {
+   "type": "color",
+   "value": "#8C9198"
+  },
+  "outline variant": {
+   "type": "color",
+   "value": "#42474E"
+  }
+ }
+}

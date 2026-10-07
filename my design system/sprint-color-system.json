@@ -1,0 +1,136 @@
+{
+  "keyColors": {
+    "primary": "#94B0D1",
+    "secondary": "#6F91B8",
+    "tertiary": "#496783",
+    "neutral": "#6F7D8C",
+    "neutralVariant": "#A5B4C5",
+    "error": "#BA1A1A",
+    "warning": "#8A5100"
+  },
+  "palettes": {
+    "primary": {
+      "note": "tone 40 fixed to #006BE6 (verified, replaces overridden #94B0D1); tone 70 is the Key color",
+      "0": "#000000", "4": "#000E25", "10": "#002868", "20": "#004180", "30": "#005B9A",
+      "40": "#006BE6", "50": "#2C7BBD", "60": "#4C95D9", "70": "#94B0D1", "80": "#86CCFF",
+      "90": "#A3E8FF", "95": "#B1F6FF", "99": "#BDFFFF", "100": "#FFFFFF"
+    },
+    "secondary": {
+      "0": "#000000", "4": "#000E26", "10": "#002869", "20": "#004181", "30": "#005A9B",
+      "40": "#0062A3", "50": "#2F7BBD", "60": "#4E95D9", "70": "#6BB0F6", "80": "#88CBFF",
+      "90": "#A4E8FF", "95": "#B3F6FF", "99": "#BEFFFF", "100": "#FFFFFF"
+    },
+    "tertiary": {
+      "0": "#000000", "4": "#000F25", "10": "#002A66", "20": "#00437E", "30": "#005C99",
+      "40": "#0066A3", "50": "#207DBB", "60": "#4497D6", "70": "#63B1F3", "80": "#80CDFF",
+      "90": "#9DE9FF", "95": "#ACF8FF", "99": "#B7FFFF", "100": "#FFFFFF"
+    },
+    "neutral": {
+      "0": "#000000", "4": "#090A0B", "10": "#1A1C1E", "20": "#2F3033", "30": "#45474A",
+      "40": "#5D5E61", "50": "#76777A", "60": "#909194", "70": "#AAABAE", "80": "#C6C6C9",
+      "90": "#E2E2E5", "95": "#F0F0F4", "99": "#FCFCFF", "100": "#FFFFFF"
+    },
+    "neutralVariant": {
+      "0": "#000000", "4": "#080A0C", "10": "#171C22", "20": "#2B3137", "30": "#42474E",
+      "40": "#595F66", "50": "#72777F", "60": "#8C9198", "70": "#A6ACB3", "80": "#C2C7CF",
+      "90": "#DEE3EB", "95": "#ECF1F9", "99": "#F8FCFF", "100": "#FFFFFF"
+    },
+    "neutralExtended": {
+      "note": "monochromatic, hue 212 (Primary's own hue), 8% saturation",
+      "0": "#000000", "4": "#090A0B", "10": "#17191C", "20": "#2F3337", "30": "#464C53",
+      "40": "#5E656E", "50": "#757F8A", "60": "#9198A1", "70": "#ACB2B9", "80": "#C8CCD0",
+      "90": "#E3E5E8", "95": "#F1F2F3", "99": "#FCFCFD", "100": "#FFFFFF"
+    },
+    "neutralVariantExtended": {
+      "note": "monochromatic, hue 212 (Primary's own hue), 15% saturation",
+      "0": "#000000", "4": "#090A0C", "10": "#16191D", "20": "#2B323B", "30": "#414C58",
+      "40": "#576575", "50": "#6C7E93", "60": "#8A98A8", "70": "#A7B2BE", "80": "#C4CBD4",
+      "90": "#E2E5E9", "95": "#F0F2F4", "99": "#FCFCFD", "100": "#FFFFFF"
+    },
+    "error": {
+      "note": "93 and 96 are user-applied custom stops replacing standard 95/99; 93 is off the real M3 tone scale",
+      "0": "#000000", "4": "#170001", "10": "#410002", "20": "#690005", "30": "#93000A",
+      "40": "#BA1A1A", "50": "#DE3730", "60": "#FF5449", "70": "#FF897D", "80": "#FFB4AB",
+      "90": "#FFDAD6", "93": "#FFE5E2", "96": "#FFF1EF", "100": "#FFFFFF"
+    },
+    "warning": {
+      "note": "93 and 96 are user-applied custom stops replacing standard 95/99; 93 is off the real M3 tone scale",
+      "0": "#000000", "4": "#110800", "10": "#2E1500", "20": "#4E2600", "30": "#703900",
+      "40": "#8A5100", "50": "#A96700", "60": "#C98200", "70": "#E69A00", "80": "#FFB74D",
+      "90": "#FFDC9E", "93": "#FFE5BC", "96": "#FFEFDC", "100": "#FFFFFF"
+    }
+  },
+  "colorRoles": {
+    "primary": {
+      "note": "Option 1 applied: primary is the seed itself (tone 70), onPrimary is a monochromatic dark at H212/S100/L10 (7.97:1, passes AAA). #006BE6 remains in the palette as tone 40 only.",
+      "primary": "#94B0D1",
+      "onPrimary": "#001833",
+      "primaryContainer": "#A3E8FF",
+      "onPrimaryContainer": "#002868"
+    },
+    "secondary": {
+      "secondary": "#0062A3",
+      "onSecondary": "#FFFFFF",
+      "secondaryContainer": "#A4E8FF",
+      "onSecondaryContainer": "#002869"
+    },
+    "tertiary": {
+      "tertiary": "#0066A3",
+      "onTertiary": "#FFFFFF",
+      "tertiaryContainer": "#9DE9FF",
+      "onTertiaryContainer": "#002A66"
+    },
+    "error": {
+      "error": "#BA1A1A",
+      "onError": "#FFFFFF",
+      "errorContainer": "#FFDAD6",
+      "onErrorContainer": "#410002"
+    },
+    "surface": {
+      "surface": "#F9F9FC",
+      "onSurface": "#1A1C1E",
+      "surfaceVariant": "#DEE3EB",
+      "onSurfaceVariant": "#42474E"
+    },
+    "surfaceContainers": {
+      "surfaceContainerLowest": "#FFFFFF",
+      "surfaceContainerLow": "#F3F3F7",
+      "surfaceContainer": "#EDEDF1",
+      "surfaceContainerHigh": "#E8E8EB",
+      "surfaceContainerHighest": "#E2E2E5"
+    },
+    "outline": {
+      "outline": "#72777F",
+      "outlineVariant": "#C2C7CF"
+    }
+  },
+  "extendedRoles": {
+    "note": "The 19 roles from the current M3 spec, tone-mapped per Google's official light-scheme guidance (m3.material.io / Compose / Flutter docs): Fixed group = tone 90/80/10/30 of each palette, inverse group = Neutral 20/95 + Primary 80, scrim = Neutral 0, surfaceDim/Bright = Neutral 87/98 (87 interpolated, same method already used for Neutral 92-98), surfaceTint = the primary role's own value.",
+    "primaryFixed": "#A3E8FF",
+    "primaryFixedDim": "#86CCFF",
+    "onPrimaryFixed": "#002868",
+    "onPrimaryFixedVariant": "#005B9A",
+    "secondaryFixed": "#A4E8FF",
+    "secondaryFixedDim": "#88CBFF",
+    "onSecondaryFixed": "#002869",
+    "onSecondaryFixedVariant": "#005A9B",
+    "tertiaryFixed": "#9DE9FF",
+    "tertiaryFixedDim": "#80CDFF",
+    "onTertiaryFixed": "#002A66",
+    "onTertiaryFixedVariant": "#005C99",
+    "inverseSurface": "#2F3033",
+    "inverseOnSurface": "#F0F0F4",
+    "inversePrimary": "#86CCFF",
+    "scrim": "#000000",
+    "surfaceTint": "#94B0D1",
+    "surfaceDim": "#DADADD",
+    "surfaceBright": "#F9F9FC"
+  },
+  "darkScheme": {
+    "note": "Only the primary group is redefined here. Per your instruction, dark mode leads with the seed for brand consistency instead of Google's standard dark-tone mapping (which would normally put primary at tone 80). onPrimary stays the same dark value as light mode since the background (the seed) hasn't changed, only the container tones follow the standard M3 dark pattern. This replaces the earlier, abandoned picker values (#003354 / #00304E / #101418), which were off-ramp and not seed-based.",
+    "primary": "#94B0D1",
+    "onPrimary": "#001833",
+    "primaryContainer": "#005B9A",
+    "onPrimaryContainer": "#A3E8FF"
+  }
+}

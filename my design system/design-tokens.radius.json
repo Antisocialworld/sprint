@@ -1,0 +1,28 @@
+{
+ "radius": {
+  "none": {
+   "type": "dimension",
+   "value": 0
+  },
+  "small": {
+   "type": "dimension",
+   "value": 8
+  },
+  "medium": {
+   "type": "dimension",
+   "value": 12
+  },
+  "large": {
+   "type": "dimension",
+   "value": 16
+  },
+  "extra large": {
+   "type": "dimension",
+   "value": 28
+  },
+  "full": {
+   "type": "dimension",
+   "value": 9999
+  }
+ }
+}

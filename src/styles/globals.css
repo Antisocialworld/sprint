@@ -1,0 +1,767 @@
+/* DM Sans variable (weight axis 100 1000, normal) and the Poppins weights the
+   page actually uses: 600 and 500. Files live in src/styles/fonts with their
+   SIL OFL 1.1 licence texts. DM Sans is served as one variable file. */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/dm-sans-latin-wght-normal.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/poppins-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/poppins-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* declared literal, no design token */
+  --interactive-duration: 150ms;
+  --interactive-lift: -2px;
+  --interactive-nudge: 2px;
+  --interactive-press-scale: 0.98;
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --link-underline-thickness-rest: 1px;
+  --link-underline-thickness-hover: 2px;
+  --link-underline-offset-rest: 0.125rem;
+  --link-underline-offset-hover: 0.25rem;
+}
+
+:root {
+  /* app value, not a design system token, move into the token JSON later */
+  --layout-content-max-width: 48rem;
+  --button-max-width: 18rem;
+  --button-height-primary: 4rem; /* declared literal, no design token */
+  --button-height-secondary: 3.5rem; /* declared literal, no design token */
+  --min-tap-target: calc(
+    var(--spacing-extra-large-spacing) +
+      var(--spacing-base-spacing) +
+      var(--spacing-extra-small-spacing)
+  ); /* 44px minimum touch target, composed from the spacing tokens */
+  --hero-art-max-width: 32rem;
+}
+
+/* Base reset. The zero margin comes from the spacing token, not a literal. */
+body {
+  margin: var(--spacing-no-spacing);
+  font-family: var(--font-family-secondary);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a[href] {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- *
+ * Role classes. One role per class. Eleven properties each, taken
+ * straight from that role's block in design-variables.css. Text
+ * alignment is deliberately absent: it is not a design system
+ * property and is set per use with a keyword.
+ *
+ * Source order matters below. Every role class sets text-decoration
+ * from its own token, so a page class that needs a different
+ * decoration must be written after the role class it overrides.
+ * ---------------------------------------------------------------- */
+
+/* display large. The single h1 role. Lines 234 to 244. */
+.display-large {
+  font-size: var(--font-display-large-fontsize);
+  line-height: var(--font-display-large-lineheight);
+  letter-spacing: var(--font-display-large-letterspacing);
+  font-weight: var(--font-display-large-fontweight);
+  font-family: var(--font-display-large-fontfamily);
+  font-style: var(--font-display-large-fontstyle);
+  font-stretch: var(--font-display-large-fontstretch);
+  text-decoration: var(--font-display-large-textdecoration);
+  text-indent: var(--font-display-large-paragraphindent);
+  margin: var(--font-display-large-paragraphspacing);
+  text-transform: var(--font-display-large-textcase);
+}
+
+/* title small. The wordmark role. Lines 344 to 354. */
+.title-small {
+  font-size: var(--font-title-small-fontsize);
+  line-height: var(--font-title-small-lineheight);
+  letter-spacing: var(--font-title-small-letterspacing);
+  font-weight: var(--font-title-small-fontweight);
+  font-family: var(--font-title-small-fontfamily);
+  font-style: var(--font-title-small-fontstyle);
+  font-stretch: var(--font-title-small-fontstretch);
+  text-decoration: var(--font-title-small-textdecoration);
+  text-indent: var(--font-title-small-paragraphindent);
+  margin: var(--font-title-small-paragraphspacing);
+  text-transform: var(--font-title-small-textcase);
+}
+
+/* body large. The supporting sentence role. Lines 355 to 365. */
+.body-large {
+  font-size: var(--font-body-large-fontsize);
+  line-height: var(--font-body-large-lineheight);
+  letter-spacing: var(--font-body-large-letterspacing);
+  font-weight: var(--font-body-large-fontweight);
+  font-family: var(--font-body-large-fontfamily);
+  font-style: var(--font-body-large-fontstyle);
+  font-stretch: var(--font-body-large-fontstretch);
+  text-decoration: var(--font-body-large-textdecoration);
+  text-indent: var(--font-body-large-paragraphindent);
+  margin: var(--font-body-large-paragraphspacing);
+  text-transform: var(--font-body-large-textcase);
+}
+
+/* body medium. The supporting sentence role. Lines 366 to 376. */
+.body-medium {
+  font-size: var(--font-body-medium-fontsize);
+  line-height: var(--font-body-medium-lineheight);
+  letter-spacing: var(--font-body-medium-letterspacing);
+  font-weight: var(--font-body-medium-fontweight);
+  font-family: var(--font-body-medium-fontfamily);
+  font-style: var(--font-body-medium-fontstyle);
+  font-stretch: var(--font-body-medium-fontstretch);
+  text-decoration: var(--font-body-medium-textdecoration);
+  text-indent: var(--font-body-medium-paragraphindent);
+  margin: var(--font-body-medium-paragraphspacing);
+  text-transform: var(--font-body-medium-textcase);
+}
+
+/* label large. Button label and link label role. Lines 388 to 398. */
+.label-large {
+  font-size: var(--font-label-large-fontsize);
+  line-height: var(--font-label-large-lineheight);
+  letter-spacing: var(--font-label-large-letterspacing);
+  font-weight: var(--font-label-large-fontweight);
+  font-family: var(--font-label-large-fontfamily);
+  font-style: var(--font-label-large-fontstyle);
+  font-stretch: var(--font-label-large-fontstretch);
+  text-decoration: var(--font-label-large-textdecoration);
+  text-indent: var(--font-label-large-paragraphindent);
+  margin: var(--font-label-large-paragraphspacing);
+  text-transform: var(--font-label-large-textcase);
+}
+
+/* ---------------------------------------------------------------- *
+ * Page classes for the landing screen. Layout keywords only.
+ * ---------------------------------------------------------------- */
+
+/* The screen. Full viewport width at every size, so the background
+   placeholder always fills the width. min-height, not height, so the
+   page is exactly one screen when the content fits and grows only
+   when it cannot. No overflow property: hidden would block the growth
+   the min-height pair exists to allow. Vertical padding only; the side
+   margin belongs to the content column. */
+.screen {
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: var(--spacing-no-spacing);
+  padding-bottom: calc(
+    var(--spacing-base-spacing) + env(safe-area-inset-bottom, 0px)
+  );
+  background-color: var(--color-surface-container);
+  color: var(--color-on-surface);
+}
+
+/* The content column. One column, capped at the app max width,
+   centred by auto inline margins, side margin from the base spacing.
+   flex auto makes it fill the screen height so the empty middle area
+   can take the spare space. */
+.content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--layout-content-max-width);
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* Four very-large steps: the first two clear the absolutely placed
+     wordmark band (its top offset plus its height) once the headline
+     group's -base pull-up is accounted for, the last two are the
+     minimum gap to the headline. */
+  padding-top: calc(var(--spacing-very-large-spacing) * 4);
+  padding-left: calc(
+    var(--spacing-base-spacing) + env(safe-area-inset-left, 0px)
+  );
+  padding-right: calc(
+    var(--spacing-base-spacing) + env(safe-area-inset-right, 0px)
+  );
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-very-large-spacing);
+}
+
+/* Top bar. Wordmark row, no icons. Absolute against the screen so the
+   wordmark sits at the document top while the column stays centred;
+   the content column reserves its height with padding-top. */
+.topbar {
+  position: absolute;
+  top: calc(
+    var(--spacing-very-large-spacing) +
+      var(--spacing-base-spacing) +
+      var(--spacing-extra-small-spacing) / 4
+  );
+  left: var(--spacing-base-spacing);
+  right: var(--spacing-base-spacing);
+  max-width: calc(
+    var(--layout-content-max-width) - var(--spacing-base-spacing) * 2
+  );
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small-spacing);
+  padding-top: var(--spacing-no-spacing);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 700px left of the centred position, only where the column is wide
+   enough for a left shift to read as a shift rather than a re-flow, and
+   clamped to the base spacing so the wordmark is never pushed past the
+   gutter. Below this width the bar stays centred. */
+@media (min-width: 1536px) {
+  .topbar {
+    right: auto;
+    width: calc(
+      var(--layout-content-max-width) - var(--spacing-base-spacing) * 2
+    );
+    margin-inline: 0;
+    left: max(
+      var(--spacing-base-spacing),
+      calc(
+        50% - var(--layout-content-max-width) / 2 +
+          var(--spacing-base-spacing) -
+          (var(--spacing-very-large-spacing) * 21 +
+            var(--spacing-large-spacing) + var(--spacing-small-spacing))
+      )
+    );
+  }
+}
+
+.brand-wordmark {
+  display: block;
+  width: auto;
+  height: var(--spacing-very-large-spacing);
+  color: var(--color-on-surface);
+  stroke: currentColor;
+  stroke-width: 0.9;
+  stroke-linejoin: round;
+  overflow: visible;
+}
+
+.brand-shoe-row {
+  display: block;
+  width: auto;
+  height: var(--spacing-very-large-spacing);
+  color: var(--color-on-surface);
+}
+
+.hero-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+}
+
+.hero-art-image {
+  width: 100%;
+  max-width: var(--hero-art-max-width);
+  height: auto;
+  display: block;
+}
+
+.brand-shoe {
+  display: block;
+  width: auto;
+  height: var(--spacing-extra-large-spacing);
+  color: var(--color-on-secondary);
+}
+
+/* Headline group. The gap above it is the base spacing. */
+.headline-group {
+  margin-top: calc(var(--spacing-base-spacing) * -1);
+}
+
+/* The hero modifier, applied to the h1 alongside the display large role.
+   Size scales between the design system display small and display large
+   values and never leaves that range. Family, weight and letter spacing
+   are not repeated here and stay on the display large role, per plan.
+   The vw pair holds the line height to font size ratio at 1.5 at both
+   ends of the range and at every width between. text-wrap balance evens
+   the lines out instead of filling the first one. No ch cap: the content
+   column already limits the line. Alignment lives here, not in the role
+   class. */
+.hero-display {
+  font-size: clamp(
+    var(--font-display-small-fontsize),
+    10vw,
+    var(--font-display-large-fontsize)
+  );
+  line-height: clamp(
+    var(--font-display-small-lineheight),
+    15vw,
+    var(--font-display-large-lineheight)
+  );
+  text-wrap: balance;
+  overflow-wrap: normal;
+  hyphens: none;
+  text-align: center;
+}
+
+/* Supporting sentence. Large spacing separates it from the headline,
+   and the alignment keyword lives here, not in the role class. */
+.sentence {
+  margin-top: var(--spacing-base-spacing);
+  text-align: center;
+  text-wrap: balance;
+  font-size: clamp(
+    var(--font-body-large-fontsize),
+    1.6vw,
+    var(--font-title-large-fontsize)
+  );
+  line-height: clamp(
+    var(--font-body-large-lineheight),
+    2.4vw,
+    var(--font-title-large-lineheight)
+  );
+}
+
+/* Below 768px the artwork is capped so it stays clear of the fold.
+   22.5rem keeps it at its native display width of 360px, 30dvh caps
+   the height, 16.5rem keeps that cap binding on tall phones, and
+   1440 / 1120 is the asset's native shape. Each of these is a
+   declared literal, no design token. The two +8 bumps split a fixed
+   share of the freed space, spacing tokens only, between the headline
+   and sentence and between the logo and headline. Nothing below the
+   illustration is compensated, so the Get Started pill rises
+   naturally by the rest of the freed height. */
+@media (max-width: 767px) {
+  .hero-art-image {
+    width: auto;
+    max-width: min(100%, 22.5rem);
+    height: auto;
+    aspect-ratio: 1440 / 1120;
+    max-height: min(30dvh, 16.5rem);
+    display: block;
+  }
+
+  .headline-group {
+    margin-top: calc(
+      var(--spacing-base-spacing) * -1 + var(--spacing-small-spacing)
+    );
+  }
+
+  .sentence {
+    margin-top: var(--spacing-extra-large-spacing);
+  }
+}
+
+/* The member text, Get Started button, log in link and legal line, in
+   normal flow after the illustration. Spacing between the items uses
+   the per-row margins below; the group as a whole sits just above the
+   chips section. */
+.bottom-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: calc(var(--spacing-medium-spacing) / 4);
+  padding-top: var(--spacing-base-spacing);
+  padding-bottom: var(--spacing-base-spacing);
+  background-color: var(--color-surface-container);
+}
+
+.member-line {
+  text-align: center;
+  text-wrap: balance;
+  margin: 0;
+}
+
+.inline-link {
+  color: var(--color-on-surface);
+  text-decoration: underline;
+}
+
+.btn-login {
+  box-sizing: border-box;
+  height: var(--button-height-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--button-max-width);
+  padding: var(--spacing-base-spacing);
+  border: none;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  text-decoration: none;
+  font-size: var(--font-label-large-fontsize);
+  font-family: var(--font-title-small-fontfamily);
+  font-weight: var(--font-title-small-fontweight);
+  line-height: var(--font-label-large-lineheight);
+  letter-spacing: var(--font-label-large-letterspacing);
+}
+
+/* Log in is a text link; the secondary button is gone. One line of
+   text, spaced below the button. */
+.login-line {
+  margin: 0;
+  margin-top: var(--spacing-large-spacing);
+  color: var(--color-on-surface);
+  font-size: var(--font-title-small-fontsize);
+  font-weight: var(--font-title-large-fontweight);
+  font-family: var(--font-title-small-fontfamily);
+  line-height: var(--font-title-small-lineheight);
+}
+
+.login-link {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.cta-button {
+  box-sizing: border-box;
+  height: var(--button-height-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--button-max-width);
+  margin-top: var(--spacing-base-spacing);
+  padding: var(--spacing-extra-small-spacing) var(--spacing-base-spacing);
+  border-radius: var(--radius-full);
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
+  text-decoration: none;
+}
+
+.btn-get-started {
+  position: absolute;
+  top: calc(
+    var(--spacing-very-large-spacing) +
+      var(--spacing-base-spacing) +
+      var(--spacing-extra-small-spacing) / 4
+  );
+  right: max(
+    var(--spacing-base-spacing),
+    calc(
+      50% - var(--layout-content-max-width) / 2 +
+        var(--spacing-base-spacing)
+    )
+  );
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--spacing-very-large-spacing);
+  padding-inline: var(--spacing-base-spacing);
+  border-radius: var(--radius-full);
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
+  text-decoration: none;
+}
+
+/* Same expression as the topbar's left rule, mirrored to the right
+   edge, so the button's right gap always equals the row's left gap. */
+@media (min-width: 1536px) {
+  .btn-get-started {
+    right: max(
+      var(--spacing-base-spacing),
+      calc(
+        50% - var(--layout-content-max-width) / 2 +
+          var(--spacing-base-spacing) -
+          (var(--spacing-very-large-spacing) * 21 +
+            var(--spacing-large-spacing) + var(--spacing-small-spacing))
+      )
+    );
+  }
+}
+
+/* On phones the header Get Started pill is hidden and the logo shrinks,
+   both governed by this one breakpoint. display:none removes the pill
+   from the accessibility tree and the tab order. The wordmark and the
+   shoe row keep their aspect ratio (SVGs, width auto) and their spacing;
+   the left edge stays at the content gutter because .topbar is unchanged.
+   The bottom group still carries a Get Started call to action. */
+@media (max-width: 767px) {
+  .btn-get-started {
+    display: none;
+  }
+
+  .brand-wordmark,
+  .brand-shoe-row {
+    height: calc(
+      var(--spacing-very-large-spacing) -
+        var(--spacing-extra-small-spacing)
+    );
+  }
+}
+
+.legal-line {
+  text-align: center;
+  margin: 0;
+  margin-top: var(--spacing-extra-large-spacing);
+  color: var(--color-on-surface);
+  font-size: var(--font-title-small-fontsize);
+  font-weight: var(--font-title-large-fontweight);
+  font-family: var(--font-title-small-fontfamily);
+  line-height: var(--font-title-small-lineheight);
+}
+
+.qa-section {
+  margin-top: var(--spacing-very-large-spacing);
+  text-align: center;
+}
+
+/* Wide screens only: keep everything from the headline to the legal
+   line in the exact vertical position it had while the content
+   column was centred, and pin the chips section to the viewport
+   bottom. The suggested grid layout (first row auto-sized and
+   centred, second row at the bottom) is expressed with the flex
+   auto margins already on the page so no markup wrapper is needed:
+   the spare room inside the content column is split evenly between a
+   top margin on the headline group and a bottom margin on the member
+   group. That centres the main block in the same room the whole
+   column used to centre in, because the chips section keeps the very
+   large spacing it always had above it and only its position at the
+   end of the column changes, which is exactly the room the grid's
+   first row was meant to reserve. The content column's padding-top
+   gives back the headline group's base -1rem pull-up that its auto
+   margin replaces, so the headline keeps the same offset on screens
+   where the content is taller and the auto margins resolve to zero.
+   The 768px breakpoint and the 100dvh in the min-height are declared
+   literals, no design token. Below 768px nothing here applies. */
+@media (min-width: 768px) {
+  .content {
+    margin-top: var(--spacing-no-spacing);
+    margin-bottom: var(--spacing-no-spacing);
+    padding-top: calc(
+      var(--spacing-very-large-spacing) * 4 -
+        var(--spacing-base-spacing)
+    );
+    min-height: calc(
+      100dvh - var(--spacing-base-spacing) -
+        env(safe-area-inset-bottom, 0px)
+    );
+  }
+
+  .headline-group {
+    margin-top: auto;
+  }
+
+  .bottom-group {
+    margin-bottom: auto;
+  }
+}
+
+.qa-heading {
+  margin-top: calc(
+    var(--spacing-base-spacing) - var(--spacing-extra-small-spacing) / 2
+  );
+  margin-bottom: calc(var(--spacing-extra-small-spacing) * 4.5);
+  font-family: var(--font-title-small-fontfamily);
+  font-size: var(--font-title-small-fontsize);
+  font-weight: var(--font-title-small-fontweight);
+  line-height: var(--font-title-small-lineheight);
+  letter-spacing: var(--font-title-small-letterspacing);
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-small-spacing);
+}
+
+.chip {
+  padding: var(--spacing-small-spacing) var(--spacing-base-spacing);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-container-high);
+  color: var(--color-on-surface);
+}
+
+/* The arrow badge. A circle on the surface colour inside the
+   secondary fill, holding one aria-hidden text character. */
+.cta-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  padding: var(--spacing-small-spacing);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-title-medium-increased-fontsize);
+}
+
+.cta-badge svg {
+  width: calc(
+    var(--spacing-extra-large-spacing) + var(--spacing-extra-small-spacing)
+  );
+  height: calc(
+    var(--spacing-extra-large-spacing) + var(--spacing-extra-small-spacing)
+  );
+}
+
+/* The button label. flex 1 takes all the space the badge leaves and
+   text align centre puts the label in the middle of that space. The
+   badge (44px: 8px padding either side of a 28px arrow glyph) and the
+   shoe (a square mark whose rendered width equals its 24px height)
+   differ in width, so the label box sits 10px right of the pill
+   centre. The end margin withdraws that width difference from the
+   label box, making the box, and the centred text, symmetric about
+   the pill centre. nowrap keeps the label on one line where the
+   margin leaves a box narrower than the text, as at 240. */
+.cta-label {
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 0;
+  margin-inline-end: 20px; /* badge width 44 - shoe width 24, declared literal, no design token */
+}
+
+/* Interactive states. Motion and focus: transforms, box shadows
+   and outlines. The one sanctioned colour change is the Get Started
+   pill's hover fill. */
+.btn-get-started,
+.btn-login,
+.cta-button,
+[role="dialog"] button {
+  transition: transform var(--interactive-duration) ease-out,
+    box-shadow var(--interactive-duration) ease-out,
+    background-color var(--interactive-duration) ease-out;
+}
+
+.inline-link {
+  text-decoration-thickness: var(--link-underline-thickness-rest);
+  text-underline-offset: var(--link-underline-offset-rest);
+}
+
+/* Minimum touch target for the small text buttons. A transparent
+   centred overlay enlarges the hit area to the 44px minimum without
+   moving the visible text or the layout around it. */
+.inline-link,
+[role="dialog"] button {
+  position: relative;
+}
+
+.inline-link::before,
+[role="dialog"] button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--min-tap-target);
+  height: var(--min-tap-target);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-get-started:hover,
+  .btn-login:hover,
+  .cta-button:hover,
+  [role="dialog"] button:hover {
+    transform: translateY(var(--interactive-lift));
+    box-shadow: var(--shadow-medium);
+  }
+
+  .cta-button:hover .cta-badge svg {
+    transform: translateX(var(--interactive-nudge));
+  }
+
+  .cta-button:hover {
+    background-color: var(--color-secondary-30);
+  }
+
+  .inline-link:hover {
+    color: var(--color-secondary);
+    text-decoration-thickness: var(--link-underline-thickness-hover);
+    text-underline-offset: var(--link-underline-offset-hover);
+  }
+}
+
+.inline-link:active {
+  color: var(--color-secondary-20);
+}
+
+/* The three in-scope links carry the design system blue at rest, on
+   hover and on press, so colour never changes between states; the
+   underline thickness and offset express interaction instead. The
+   rest underline is one step heavier than the default inline link. */
+.legal-line .inline-link,
+.login-link {
+  color: var(--color-secondary);
+  font-weight: var(--font-title-small-fontweight);
+  text-decoration-thickness: var(--link-underline-thickness-hover);
+}
+
+.legal-line .inline-link:hover,
+.login-link:hover {
+  color: var(--color-secondary);
+}
+
+.legal-line .inline-link:active,
+.login-link:active {
+  color: var(--color-secondary);
+}
+
+.btn-get-started:active,
+.btn-login:active,
+.cta-button:active,
+[role="dialog"] button:active {
+  transform: translateY(0) scale(var(--interactive-press-scale));
+  box-shadow: none;
+}
+
+.btn-get-started:focus-visible,
+.btn-login:focus-visible,
+.cta-button:focus-visible,
+.inline-link:focus-visible,
+[role="dialog"] button:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-secondary);
+  outline-offset: var(--focus-ring-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-get-started,
+  .btn-login,
+  .cta-button,
+  [role="dialog"] button {
+    transition: none;
+  }
+
+  .btn-get-started:hover,
+  .btn-login:hover,
+  .cta-button:hover,
+  [role="dialog"] button:hover,
+  .cta-button:hover .cta-badge svg,
+  .btn-get-started:active,
+  .btn-login:active,
+  .cta-button:active,
+  [role="dialog"] button:active {
+    transform: none;
+  }
+}

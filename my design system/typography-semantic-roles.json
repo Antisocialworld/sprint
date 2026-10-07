@@ -1,0 +1,29 @@
+{
+  "note": "Margin and spacing tokens have no effect on SEO or screen reader behavior. What actually matters for both is the semantic HTML element each typography style renders as. This file maps each existing style to its correct element.",
+  "typographySemanticRoles": {
+    "display large": { "element": "h1", "use": "The single main page title. One per page, for SEO and screen reader page structure." },
+    "display medium": { "element": "h1", "use": "Alternate h1 size for a shorter hero context." },
+    "display small": { "element": "h1", "use": "Alternate h1 size for a compact hero context." },
+    "headline large": { "element": "h2", "use": "Major section heading." },
+    "headline medium": { "element": "h2", "use": "Major section heading, smaller." },
+    "headline small": { "element": "h2", "use": "Major section heading, smallest." },
+    "title large": { "element": "h3", "use": "Subsection heading." },
+    "title large reduced": { "element": "h3", "use": "Subsection heading, compact." },
+    "title medium": { "element": "h4", "use": "Card or block heading." },
+    "title medium increased": { "element": "h4", "use": "Card or block heading, larger." },
+    "title small": { "element": "h5", "use": "Minor heading, list group label." },
+    "body large": { "element": "p", "use": "Primary paragraph text." },
+    "body medium": { "element": "p", "use": "Secondary paragraph text." },
+    "body small": { "element": "p", "use": "Fine print, captions." },
+    "label large": { "element": "span with aria-label on its control", "use": "Button and form control text, not a heading." },
+    "label medium": { "element": "span with aria-label on its control", "use": "Smaller button and form control text." },
+    "label small": { "element": "span with aria-label on its control", "use": "Smallest button and form control text." }
+  },
+  "rules": [
+    "Never skip a heading level (h1 to h3 with no h2) purely to get a smaller visual size. Pick the style whose visual size matches the correct semantic level instead.",
+    "Exactly one h1 per page.",
+    "Every non-text control (icon-only button, image used as a link) needs an aria-label or alt text, the typography role alone does not provide this.",
+    "font-family and font-weight must never be the only way meaning is conveyed (e.g. bold alone signaling 'required'). Screen readers do not reliably announce style, only structure and explicit text.",
+    "Set lang on the html element so screen readers pick the correct pronunciation and font fallback (Poppins and DM Sans both already have fallback stacks defined)."
+  ]
+}

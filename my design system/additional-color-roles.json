@@ -1,0 +1,24 @@
+{
+  "color roles additional": {
+    "warning": { "type": "color", "value": "#8A5100" },
+    "on warning": { "type": "color", "value": "#FFFFFF" },
+    "warning container": { "type": "color", "value": "#FFDC9E" },
+    "on warning container": { "type": "color", "value": "#2E1500" },
+    "neutral": { "type": "color", "value": "#5D5E61" },
+    "on neutral": { "type": "color", "value": "#FFFFFF" },
+    "neutral container": { "type": "color", "value": "#E2E2E5" },
+    "on neutral container": { "type": "color", "value": "#1A1C1E" },
+    "neutral variant": { "type": "color", "value": "#595F66" },
+    "on neutral variant": { "type": "color", "value": "#FFFFFF" },
+    "neutral variant container": { "type": "color", "value": "#DEE3EB" },
+    "on neutral variant container": { "type": "color", "value": "#171C22" },
+    "neutral extended": { "type": "color", "value": "#5E656E" },
+    "on neutral extended": { "type": "color", "value": "#FFFFFF" },
+    "neutral extended container": { "type": "color", "value": "#E3E5E8" },
+    "on neutral extended container": { "type": "color", "value": "#17191C" },
+    "neutral variant extended": { "type": "color", "value": "#576575" },
+    "on neutral variant extended": { "type": "color", "value": "#FFFFFF" },
+    "neutral variant extended container": { "type": "color", "value": "#E2E5E9" },
+    "on neutral variant extended container": { "type": "color", "value": "#16191D" }
+  }
+}
